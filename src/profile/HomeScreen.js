@@ -51,7 +51,7 @@ export default class HomeScreen extends Component
 
           <View style={styles.taskContainer}>
             <View style={{marginBottom: 20}}>
-              <Text style={{color: COLOR_DEFAULT, fontSize: 20, fontWeight: 'bold'}}>Мои задачи</Text>
+              <Text style={{color: '#535353', fontSize: 20, fontWeight: 'bold'}}>Мои задачи</Text>
 
             </View>
             {

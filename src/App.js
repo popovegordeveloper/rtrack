@@ -5,7 +5,7 @@ import {createMaterialBottomTabNavigator } from 'react-navigation-material-botto
 import ProfileScreen from './profile'
 import ProjectScreen from './project'
 import StatisticScreen from './statistic'
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import Ionicons from 'react-native-vector-icons/Ionicons'
 import {COLOR_FOCUSED, COLOR_DEFAULT} from './constants';
 
 const tabs = createMaterialBottomTabNavigator (
@@ -13,23 +13,23 @@ const tabs = createMaterialBottomTabNavigator (
     Profile: {screen: ProfileScreen, navigationOptions:{
         tabBarIcon: ({ tintColor }) => (
           <View>
-            <MaterialCommunityIcons style={[{color: tintColor}]} size={30} name={'account'}/>
+            <Ionicons style={[{color: tintColor}]} size={30} name={'md-home'}/>
           </View>),
       }  },
     Project: {screen: ProjectScreen, navigationOptions:{
         tabBarIcon: ({ tintColor }) => (
           <View>
-            <MaterialCommunityIcons style={[{color: tintColor}]} size={30} name={'buffer'}/>
+            <Ionicons style={[{color: tintColor}]} size={30} name={'ios-apps'}/>
           </View>),
       }  },
     Statistic: {screen: StatisticScreen, navigationOptions:{
         tabBarIcon: ({ tintColor }) => (
           <View>
-            <MaterialCommunityIcons style={[{color: tintColor}]} size={30} name={'chart-bar'}/>
+            <Ionicons style={[{color: tintColor}]} size={30} name={'ios-stats'}/>
           </View>),
       }  },
   }, {
-    activeColor: COLOR_FOCUSED,
+    activeColor: '#212121',
     inactiveColor: COLOR_DEFAULT,
     barStyle: { backgroundColor: 'white', elevation: 0 },
     labeled: false
